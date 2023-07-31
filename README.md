@@ -1,78 +1,72 @@
-# GitHub Codespaces ♥️ React
+<h1 align="center">
+    Sistema de Receitas Culinárias
+</h1>
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+<div align="center">
+  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZfdcDoYbFDE4MrFowcOtfsOHIi6ISG_GvAd5q4ZaDxqkNoZTm9r6wtA4JobzVZdIcrlckuxid0WLw45Aoqf6pZ0S78bxJHu6r1JCBRRt_mM9VtU7-t7Y0exBf9DzHg1-DtnTcl-rr7c-p4XmeXZsShRFY8Xy2j5EmIaJxJeF3lk-29CwOSWo4wCIm/s607/pagina-em-construcao.png" alt"Imagem com a mensagem em construção" title="Imagem com a mensagem em construção" width="600" />
+</div>
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+---
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
 
-This project was bootstrapped for you with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+### 🤔 Sobre o Projeto?
 
-### `npm start`
+Trata-se de um app que lista Receitas Culinárias da API [Spoonacular](https://spoonacular.com/food-api)
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+## 🚀 Tecnologias
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm test`
+- [React](https://react.dev/)
+- [Redux](https://react-redux.js.org/)
+- [Styled Component](https://styled-components.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### ✨ Sobre a construção do projeto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- É exibida uma lista dos principais pratos;
+- É possível pesquisar por uma receita;
+- É possível filtrar as receitas;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🙅 Instalações e usos
 
-### `npm run eject`
+Esse projeto foi desenvolvido usando o [Github Codespaces](https://github.com/features/codespaces)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+A versão React do projeto é a `18.2.0`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A versão do Redux é a `8.1.2`;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+A versão do Styled-Component é a `5.3.10`;
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A versão do Node é `20.4.0`.
 
-## Learn More
+Caso queira, clone ou faça o downlod desse repositório:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+# Clone o repositório
+$ git clone git@github.com:williamalonso/sistema-receita-culinaria.git
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Após baixar ou clonar, rode o comando `npm i`.
 
-### Code Splitting
+Para rodar a aplicação, vá no arquivo `package.json` e remova o `BROWSER=none WDS_SOCKET_PORT=0` na linha abaixo:
+```js
+"start": "BROWSER=none WDS_SOCKET_PORT=0 react-scripts start",
+```
+Após isso, crie uma conta na [Spoonacular](https://spoonacular.com/food-api) para pegar uma apiKey.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+com a apiKey, crie o arquivo `.env` e dentro dele crie a variável:
+```js
+REACT_APP_API_KEY={cole_sua_chave}
+```
 
-### Analyzing the Bundle Size
+Por fim, dê o comando `npm start`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3 align="center">William Alonso</h3>
