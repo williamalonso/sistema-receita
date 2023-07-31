@@ -19,18 +19,19 @@ const Pages = () => {
         const api = await fetch(`https://api.spoonacular.com/recipes/random?apiKey=${apiKey}&number=9`);
 
         const data = await api.json();
-        console.log(data);
+        // console.log(data.recipes);
 
-        dispatch(setPopular(data));
+        dispatch(setPopular(data.recipes));
     }
-
+    console.log('dados: ',popularData);
     return(
         <div>
-            {popularData.map( (recipe) => {
+            {/* {popularData.map( (recipe) => {
                 <div key={recipe.id}>
                     <h3>{recipe.title}</h3>
                 </div>
-            })}
+            })} */}
+            <p>teste</p>
         </div>
     );
 }
