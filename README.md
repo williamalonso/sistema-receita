@@ -56,7 +56,7 @@ $ git clone git@github.com:williamalonso/sistema-receita-culinaria.git
 
 Após baixar ou clonar, rode o comando `npm i`.
 
-Para rodar a aplicação, vá no arquivo `package.json` e remova o `BROWSER=none WDS_SOCKET_PORT=0` na linha abaixo:
+Para rodar a aplicação na sua máquina usando o VSCode, vá no arquivo `package.json` e remova o `BROWSER=none WDS_SOCKET_PORT=0` na linha abaixo:
 ```js
 "start": "BROWSER=none WDS_SOCKET_PORT=0 react-scripts start",
 ```
