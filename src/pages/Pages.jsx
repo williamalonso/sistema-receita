@@ -5,10 +5,10 @@ import Home from './Home';
 
 const Pages = () => {
     const apiKey = process.env.REACT_APP_API_KEY;
-    // const dispatch = useDispatch();
-    // const popularData = useSelector( (state)=> 
-    //     state.popularRecipe.popularData
-    // );
+    const dispatch = useDispatch();
+    const popularData = useSelector( (state)=> 
+        state.popularRecipe.popularData
+    );
 
     useEffect( () => {
         getPopular();
@@ -21,19 +21,16 @@ const Pages = () => {
         const data = await api.json();
         console.log(data);
 
-        // dispatch(setPopular(data.recipes));
+        dispatch(setPopular(data));
     }
 
     return(
         <div>
-            {/* {popularData.map( (recipe) => {
-                return(
-                    <div>
-                        <p>{recipe.title}</p>
-                    </div>
-                );
-            })} */}
-            <p>ola</p>
+            {popularData.map( (recipe) => {
+                <div key={recipe.id}>
+                    <h3>{recipe.title}</h3>
+                </div>
+            })}
         </div>
     );
 }

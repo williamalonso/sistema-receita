@@ -3,7 +3,7 @@ import { configureStore, createSlice } from '@reduxjs/toolkit';
 /* ===== Popular Recipes State ===== */
 
 const initialPopular = {
-  popularData: 0,
+  popularData: '',
 };
 
 const popularRecipeSlice = createSlice({ // criando o slice
