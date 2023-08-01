@@ -26,12 +26,13 @@ const Pages = () => {
     console.log('dados: ',popularData);
     return(
         <div>
-            {/* {popularData.map( (recipe) => {
-                <div key={recipe.id}>
-                    <h3>{recipe.title}</h3>
-                </div>
-            })} */}
-            <p>teste</p>
+            {
+                Object.keys(popularData).map( (key) => (
+                    <div key={key}>
+                        <h3>{popularData[key].title}</h3>
+                    </div>
+                ))
+            }
         </div>
     );
 }
