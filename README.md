@@ -24,6 +24,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://react.dev/)
 - [Redux](https://react-redux.js.org/)
 - [Styled Component](https://styled-components.com/)
+- [React Router](https://reactrouter.com/en/main)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Icons](https://react-icons.github.io/react-icons)
+- [React Splide](https://splidejs.com)
 
 ---
 
@@ -43,7 +47,9 @@ A versão React do projeto é a `18.2.0`.
 
 A versão do Redux é a `8.1.2`;
 
-A versão do Styled-Component é a `5.3.10`;
+A versão do Styled-Component é a `6.0.5`;
+
+A versão do Router é a `6.14.2`;
 
 A versão do Node é `20.4.0`.
 
