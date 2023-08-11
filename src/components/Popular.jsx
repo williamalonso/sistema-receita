@@ -13,7 +13,7 @@ const Popular = () => {
 
     const apiKey = process.env.REACT_APP_API_KEY;
     const dispatch = useDispatch();
-    const popularData = useSelector( (state)=> 
+    const popularData = useSelector( (state) => 
         state.popularRecipe.popularData
     );
 
@@ -22,24 +22,22 @@ const Popular = () => {
     }, [dispatch, apiKey]);
 
     return(
-        <div>
-            <StyledWrapper>
-                <h3>Pratos populares</h3>
-                <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
-                {
-                    Object.keys(popularData).map( (key) => (
-                        <SplideSlide key={key}>
-                            <StyledCard>
-                                <p>{popularData[key].title}</p>
-                                <img src={popularData[key].image} alt={popularData[key].title} />
-                                <StyledGradient />
-                            </StyledCard>
-                        </SplideSlide>
-                    ))
-                }
-                </Splide>
-            </StyledWrapper>
-        </div>
+        <StyledWrapper>
+            <h3>Pratos populares</h3>
+            <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
+            {
+                Object.keys(popularData).map( (key) => (
+                    <SplideSlide key={key}>
+                        <StyledCard>
+                            <p>{popularData[key].title}</p>
+                            <img src={popularData[key].image} alt={popularData[key].title} />
+                            <StyledGradient />
+                        </StyledCard>
+                    </SplideSlide>
+                ))
+            }
+            </Splide>
+        </StyledWrapper>
     );
 }
 
