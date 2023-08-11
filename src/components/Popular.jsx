@@ -19,7 +19,7 @@ const Popular = () => {
 
     useEffect( () => {
         popularRecipesService(dispatch, setPopular, apiKey);
-    }, []);
+    }, [dispatch, apiKey]);
 
     return(
         <div>
