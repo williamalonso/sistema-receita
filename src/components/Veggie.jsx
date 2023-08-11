@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import StyledCard from './StyledComponents/StyledCard';
 import StyledGradient from './StyledComponents/StyledGradient';
 import StyledWrapper from './StyledComponents/StyledWrapper';
+import StyledH3 from './StyledComponents/StyledH3';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
 import dietRecipesService from '../services/dietRecipesService';
@@ -23,7 +24,7 @@ const Veggie = () => {
 
     return(
         <StyledWrapper>
-            <h3>Pratos Veganos</h3>
+            <StyledH3>Pratos Veganos</StyledH3>
             <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}}>
                 {
                     Object.keys(dietData).map( (key) => (
