@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledWrapper = styled.div`
-  margin : 4rem 0rem;
+  margin : 4rem 20%;
   /* background-color: red; */
 `;
 

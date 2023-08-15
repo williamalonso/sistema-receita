@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const StyledGlobal = createGlobalStyle`
   body {
     padding: 0;
-    margin: 0 20%;
+    margin: 0;
   }
   h4 {
     font-size: 1rem;
