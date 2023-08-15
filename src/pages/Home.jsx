@@ -5,8 +5,8 @@ import Veggie from '../components/Veggie';
 function Home() {
     return(
         <div>
-            <Popular></Popular>
             <Veggie></Veggie>
+            <Popular></Popular>
         </div>
     );
 }
