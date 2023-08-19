@@ -13,25 +13,25 @@ function Category() {
   return(
     <StyledWrapper>
       <List>
-        <Link to={'/italiano'}>
+        <Link to={'/cuisine/italiano'}>
           <div>
               <FaPizzaSlice />
               <h4>Italiano</h4>
           </div>
         </Link>
-        <Link to={'/americano'}>
+        <Link to={'/cuisine/americano'}>
           <div>
             <FaHamburger />
             <h4>Americano</h4>
           </div>
         </Link>
-        <Link to={'/tailandes'}>
+        <Link to={'/cuisine/tailandes'}>
           <div>
             <GiNoodles />
             <h4>Tailandês</h4>
           </div>
         </Link>
-        <Link to={'/japones'}>
+        <Link to={'/cuisine/japones'}>
           <div>
             <GiChopsticks />
             <h4>Japonês</h4>
