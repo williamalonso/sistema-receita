@@ -36,12 +36,31 @@ const dietRecipeSlice = createSlice({
 
 export const { setDiet } = dietRecipeSlice.actions;
 
+/* ===== Cuisine Recipes State ===== */
+
+const initialCuisine = {
+  cuisineData: '',
+}
+
+const cuisineRecipeSlice = createSlice({
+  name: 'cuisineRecipe',
+  initialState: initialCuisine,
+  reducers: {
+    setCuisine: (state, action) => {
+      state.cuisineData = action.payload;
+    }
+  }
+});
+
+export const { setCuisine } = cuisineRecipeSlice.actions;
+
 /* ===== Store Config ===== */
 
 const store = configureStore({
   reducer: {
     popularRecipe: popularRecipeSlice.reducer,
     dietRecipe: dietRecipeSlice.reducer,
+    cuisineRecipe: cuisineRecipeSlice.reducer,
   }
 });
 

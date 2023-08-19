@@ -4,7 +4,7 @@ const StyledGlobal = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    background-color: red;
+    /* background-color: red; */
   }
   h4 {
     font-size: 1rem;
