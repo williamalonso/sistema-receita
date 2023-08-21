@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setCuisine } from '../store';
 import StyledGradient from '../components/StyledComponents/StyledGradient';
 import StyledCard from '../components/StyledComponents/StyledCard';
-import StyledWrapper from '../components/StyledComponents/StyledWrapper';
+import { Container } from 'react-bootstrap';
 import '@splidejs/splide/css';
 
 function Cuisine() {
@@ -23,44 +23,25 @@ function Cuisine() {
     useEffect( () => {
         cuisineRecipesService(dispatch, setCuisine, apiKey, cuisineType);
     }, [dispatch, apiKey, cuisineType]);
-
-    console.log(cuisineData);
     
     return(
         <div>
-            <div style={{display:'flex',justifyContent:'center',flexWrap:'wrap'}} className="d-flex justify-content-center align-items-center flex-wrap">teste</div>
-            <h1>Cuisine</h1>
             <Category></Category>
-            <StyledWrapper>
+                <Container className="d-flex justify-content-start align-items-center flex-wrap">
                 {
                     cuisineData.length > 0 ? (
                         cuisineData.map( (item) => (
-                            <div className="d-flex justify-content-center align-items-center flex-wrap" key={item.id}>
-                                <StyledCard>
+                                <StyledCard key={item.id} className="mb-5 ms-5 me-5">
                                     <p>{item.title}</p>
                                     <img src={item.image} alt={item.title} />
                                     <StyledGradient />
                                 </StyledCard>
-                            </div>
                         ))
-                    ) : (
-                        <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>
-                    )
+                        ) : (
+                            <div style={{marginLeft:'auto',marginRight:'auto'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>
+                        )
                 }
-                {/* <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
-                {
-                    Object.keys(cuisineData).map( (key) => (
-                        <SplideSlide key={key}>
-                            <StyledCard>
-                                <p>{cuisineData[key].title}</p>
-                                <img src={cuisineData[key].image} alt={cuisineData[key].title} />
-                                <StyledGradient />
-                            </StyledCard>
-                        </SplideSlide>
-                    ))
-                }
-                </Splide> */}
-            </StyledWrapper>
+                </Container>
         </div>
     );
 }

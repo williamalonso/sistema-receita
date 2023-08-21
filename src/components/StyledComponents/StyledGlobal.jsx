@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const StyledGlobal = createGlobalStyle`
   body {

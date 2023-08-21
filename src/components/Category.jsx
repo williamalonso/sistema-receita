@@ -1,44 +1,36 @@
 import { FaHamburger, FaPizzaSlice } from 'react-icons/fa';
 import { GiNoodles, GiChopsticks } from "react-icons/gi";
-import StyledWrapper from './StyledComponents/StyledWrapper';
-import styled from "styled-components";
+import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
-const List = styled.div`
-  display: flex;
-  justify-content: center;
-`;
 
 function Category() {
   return(
-    <StyledWrapper>
-      <List>
+    <Container className="mb-5 mt-5 d-flex justify-content-around align-items-center">
         <Link to={'/cuisine/italian'}>
-          <div>
+          <div className="d-flex justify-content-around align-items-center flex-column">
               <FaPizzaSlice />
               <h4>Italiano</h4>
           </div>
         </Link>
         <Link to={'/cuisine/american'}>
-          <div>
+          <div className="d-flex justify-content-around align-items-center flex-column">
             <FaHamburger />
             <h4>Americano</h4>
           </div>
         </Link>
         <Link to={'/cuisine/thai'}>
-          <div>
+          <div className="d-flex justify-content-around align-items-center flex-column">
             <GiNoodles />
             <h4>Tailandês</h4>
           </div>
         </Link>
         <Link to={'/cuisine/japanese'}>
-          <div>
+          <div className="d-flex justify-content-around align-items-center flex-column">
             <GiChopsticks />
             <h4>Japonês</h4>
           </div>
         </Link>
-      </List>
-    </StyledWrapper>
+    </Container>
   );
 }
 
