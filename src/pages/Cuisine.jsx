@@ -5,12 +5,10 @@ import { useParams } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setCuisine } from '../store';
-import StyledWrapper from '../components/StyledComponents/StyledWrapper';
-import StyledCard from '../components/StyledComponents/StyledCard';
 import StyledGradient from '../components/StyledComponents/StyledGradient';
-import StyledH3 from '../components/StyledComponents/StyledH3';
+import StyledCard from '../components/StyledComponents/StyledCard';
+import StyledWrapper from '../components/StyledComponents/StyledWrapper';
 import '@splidejs/splide/css';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 function Cuisine() {
 
@@ -30,11 +28,26 @@ function Cuisine() {
     
     return(
         <div>
+            <div style={{display:'flex',justifyContent:'center',flexWrap:'wrap'}} className="d-flex justify-content-center align-items-center flex-wrap">teste</div>
             <h1>Cuisine</h1>
             <Category></Category>
             <StyledWrapper>
-                <StyledH3>Pratos populares</StyledH3>
-                <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
+                {
+                    cuisineData.length > 0 ? (
+                        cuisineData.map( (item) => (
+                            <div className="d-flex justify-content-center align-items-center flex-wrap" key={item.id}>
+                                <StyledCard>
+                                    <p>{item.title}</p>
+                                    <img src={item.image} alt={item.title} />
+                                    <StyledGradient />
+                                </StyledCard>
+                            </div>
+                        ))
+                    ) : (
+                        <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100vh'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>
+                    )
+                }
+                {/* <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
                 {
                     Object.keys(cuisineData).map( (key) => (
                         <SplideSlide key={key}>
@@ -46,7 +59,7 @@ function Cuisine() {
                         </SplideSlide>
                     ))
                 }
-                </Splide>
+                </Splide> */}
             </StyledWrapper>
         </div>
     );
