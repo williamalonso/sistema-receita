@@ -2,6 +2,8 @@ import { createGlobalStyle } from "styled-components";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+const whiteColor = '#fff';
+
 const StyledGlobal = createGlobalStyle`
   body {
     padding: 0;
@@ -24,4 +26,4 @@ const StyledGlobal = createGlobalStyle`
   }
 `;
 
-export default StyledGlobal;
+export {StyledGlobal, whiteColor};
