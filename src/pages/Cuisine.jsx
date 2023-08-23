@@ -23,7 +23,6 @@ function Cuisine() {
     useEffect( () => {
         cuisineRecipesService(dispatch, setCuisine, apiKey, cuisineType);
     }, [dispatch, apiKey, cuisineType]);
-    
     return(
         <div>
             <Category></Category>

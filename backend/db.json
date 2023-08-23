@@ -1,0 +1,122 @@
+{
+  "cuisine": [
+    {
+      "id": "italian",
+      "name": "Italiano",
+      "description": "Comida italiana autêntica.",
+      "dishes": [
+        {
+          "id": 648279,
+          "title": "Italian Tuna Pasta",
+          "image": "https://spoonacular.com/recipeImages/648279-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648119,
+          "title": "Italian Fig Cookies",
+          "image": "https://spoonacular.com/recipeImages/648119-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648183,
+          "title": "Italian Panna Cotta",
+          "image": "https://spoonacular.com/recipeImages/648183-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648247,
+          "title": "Italian Seafood Stew",
+          "image": "https://spoonacular.com/recipeImages/648247-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648048,
+          "title": "Italian Beef Braciole",
+          "image": "https://spoonacular.com/recipeImages/648048-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648300,
+          "title": "Italian-Style Meatloaf",
+          "image": "https://spoonacular.com/recipeImages/648300-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 715454,
+          "title": "Italian Style Meatballs",
+          "image": "https://spoonacular.com/recipeImages/715454-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648084,
+          "title": "Italian Caprese Sliders",
+          "image": "https://spoonacular.com/recipeImages/648084-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648257,
+          "title": "Italian Steamed Artichokes",
+          "image": "https://spoonacular.com/recipeImages/648257-312x231.jpg",
+          "imageType": "jpg"
+        },
+        {
+          "id": 648097,
+          "title": "Italian Chicken With Pepper",
+          "image": "https://spoonacular.com/recipeImages/648097-312x231.jpg",
+          "imageType": "jpg"
+        }
+      ]
+    },
+    {
+      "id": "american",
+      "name": "Americano",
+      "description": "Comida Americana",
+      "dishes": [
+        { "id": 632342, "title": "An American Beef Burger", "image": "https://spoonacular.com/recipeImages/632342-312x231.jpg", "imageType": "jpg" },
+        { "id": 632071, "title": "All American Sloppy Joes", "image": "https://spoonacular.com/recipeImages/632071-312x231.jpg", "imageType": "jpg" },
+        { "id": 650126, "title": "Linguine E Americana", "image": "https://spoonacular.com/recipeImages/650126-312x231.jpg", "imageType": "jpg" },
+        { "id": 638557, "title": "Chili Gobi", "image": "https://spoonacular.com/recipeImages/638557-312x231.jpg", "imageType": "jpg" },
+        { "id": 638420, "title": "Chicken Wings", "image": "https://spoonacular.com/recipeImages/638420-312x231.jpg", "imageType": "jpg" },
+        { "id": 715424, "title": "The Best Chili", "image": "https://spoonacular.com/recipeImages/715424-312x231.jpg", "imageType": "jpg" },
+        { "id": 649593, "title": "Lemon Cupcakes", "image": "https://spoonacular.com/recipeImages/649593-312x231.jpg", "imageType": "jpg" },
+        { "id": 632573, "title": "Apple Pie Bars", "image": "https://spoonacular.com/recipeImages/632573-312x231.jpg", "imageType": "jpg" },
+        { "id": 631814, "title": "$50,000 Burger", "image": "https://spoonacular.com/recipeImages/631814-312x231.jpg", "imageType": "jpg" },
+        { "id": 632527, "title": "Apple Cupcakes", "image": "https://spoonacular.com/recipeImages/632527-312x231.jpg", "imageType": "jpg" }
+      ]
+    },
+    {
+      "id": "thai",
+      "name": "Thailandês",
+      "description": "Comida Thailandesa",
+      "dishes": [
+        { "id": 663136, "title": "Thai Pizza", "image": "https://spoonacular.com/recipeImages/663136-312x231.jpg", "imageType": "jpg" },
+        { "id": 663151, "title": "Thai Shrimp", "image": "https://spoonacular.com/recipeImages/663151-312x231.jpg", "imageType": "jpg" },
+        { "id": 663144, "title": "Thai Red Curry", "image": "https://spoonacular.com/recipeImages/663144-312x231.jpg", "imageType": "jpg" },
+        { "id": 663175, "title": "Thai-Style Fish", "image": "https://spoonacular.com/recipeImages/663175-312x231.jpg", "imageType": "jpg" },
+        { "id": 663108, "title": "Thai Fish Cakes", "image": "https://spoonacular.com/recipeImages/663108-312x231.jpg", "imageType": "jpg" },
+        { "id": 663126, "title": "Thai Pasta Salad", "image": "https://spoonacular.com/recipeImages/663126-312x231.jpg", "imageType": "jpg" },
+        { "id": 663177, "title": "Thai-Style Mussels", "image": "https://spoonacular.com/recipeImages/663177-312x231.jpg", "imageType": "jpg" },
+        { "id": 663149, "title": "Thai Sausage Salad", "image": "https://spoonacular.com/recipeImages/663149-312x231.jpg", "imageType": "jpg" },
+        { "id": 663121, "title": "Thai Massaman Curry", "image": "https://spoonacular.com/recipeImages/663121-312x231.jpg", "imageType": "jpg" },
+        { "id": 663078, "title": "Thai \"Chicken\" Wraps", "image": "https://spoonacular.com/recipeImages/663078-312x231.jpg", "imageType": "jpg" }
+      ]
+    },
+    {
+      "id": "japanese",
+      "name": "Japonês",
+      "description": "Comida Japonesa",
+      "dishes": [
+        { "id": 648506, "title": "Japanese Sushi", "image": "https://spoonacular.com/recipeImages/648506-312x231.jpg", "imageType": "jpg" },
+        { "id": 648487, "title": "Japanese Pickles", "image": "https://spoonacular.com/recipeImages/648487-312x231.jpg", "imageType": "jpg" },
+        { "id": 648462, "title": "Japanese Clear Soup", "image": "https://spoonacular.com/recipeImages/648462-312x231.jpg", "imageType": "jpg" },
+        { "id": 648500, "title": "Japanese Steak Salad", "image": "https://spoonacular.com/recipeImages/648500-312x231.jpg", "imageType": "jpg" },
+        { "id": 648470, "title": "Japanese Curry Puffs", "image": "https://spoonacular.com/recipeImages/648470-312x231.jpg", "imageType": "jpg" },
+        { "id": 648461, "title": "Japanese Chiffon Cake", "image": "https://spoonacular.com/recipeImages/648461-312x231.jpg", "imageType": "jpg" },
+        { "id": 37513, "title": "Japanese Salad Dressing", "image": "https://spoonacular.com/recipeImages/37513-312x231.jpg", "imageType": "jpg" },
+        { "id": 648467, "title": "Japanese Cucumber Salad", "image": "https://spoonacular.com/recipeImages/648467-312x231.jpg", "imageType": "jpg" },
+        { "id": 648460, "title": "Japanese Chicken Donburi", "image": "https://spoonacular.com/recipeImages/648460-312x231.jpg", "imageType": "jpg" },
+        { "id": 648475, "title": "Japanese Gyoza Pot Stickers", "image": "https://spoonacular.com/recipeImages/648475-312x231.jpg", "imageType": "jpg" }
+      ]
+    }
+  ]
+}
