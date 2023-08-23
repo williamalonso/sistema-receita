@@ -28,6 +28,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Framer Motion](https://www.framer.com/motion/)
 - [React Icons](https://react-icons.github.io/react-icons)
 - [React Splide](https://splidejs.com)
+- [React Bootstrap](https://react-bootstrap.github.io)
 
 ---
 
