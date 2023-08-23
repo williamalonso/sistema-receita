@@ -23,10 +23,11 @@ function Cuisine() {
     useEffect( () => {
         cuisineRecipesService(dispatch, setCuisine, apiKey, cuisineType);
     }, [dispatch, apiKey, cuisineType]);
+    
     return(
         <div>
             <Category></Category>
-                <Container className="d-flex justify-content-start align-items-center flex-wrap">
+            <Container className="d-flex justify-content-start align-items-center flex-wrap">
                 {
                     cuisineData.length > 0 ? (
                         cuisineData.map( (item) => (
@@ -40,7 +41,7 @@ function Cuisine() {
                             <div style={{marginLeft:'auto',marginRight:'auto'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>
                         )
                 }
-                </Container>
+            </Container>
         </div>
     );
 }

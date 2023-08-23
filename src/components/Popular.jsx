@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { setPopular } from '../store';
-import StyledWrapper from './StyledComponents/StyledWrapper';
 import StyledCard from './StyledComponents/StyledCard';
 import StyledGradient from './StyledComponents/StyledGradient';
 import StyledH3 from './StyledComponents/StyledH3';
@@ -9,6 +8,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import popularRecipesService from '../services/popularRecipesService';
 import '@splidejs/splide/css';
+import { Container } from 'react-bootstrap';
 
 const Popular = () => {
 
@@ -23,7 +23,7 @@ const Popular = () => {
     }, [dispatch, apiKey]);
 
     return(
-        <StyledWrapper>
+        <Container className="mb-5">
             <StyledH3>Pratos populares</StyledH3>
             <Splide aria-label="Popular Picks" options={{perPage:4,arrows:false,pagination:false,drag:'free',gap:'5rem'}} >
             {
@@ -38,7 +38,7 @@ const Popular = () => {
                 ))
             }
             </Splide>
-        </StyledWrapper>
+        </Container>
     );
 }
 

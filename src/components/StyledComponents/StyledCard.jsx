@@ -27,6 +27,10 @@ const StyledCards = styled.div`
     font-size: 1rem;
     height: 40%;
   }
+  &:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+  }
 `;
 
 export default StyledCards;
