@@ -72,6 +72,24 @@ const searchWordSlice = createSlice({
 
 export const { setInput } = searchWordSlice.actions;
 
+/* ===== Search Recipe State ===== */
+
+const initialSearchRecipe = {
+  initialSearchRecipe: '',
+}
+
+const searchRecipeSlice = createSlice({
+  name: 'searchRecipe',
+  initialState: initialSearchRecipe,
+  reducers: {
+    setSearchRecipe: (state, action) => {
+      state.initialSearchRecipe = action.payload;
+    }
+  }
+});
+
+export const { setSearchRecipe } = searchRecipeSlice.actions;
+
 /* ===== Store Config ===== */
 
 const store = configureStore({
@@ -80,6 +98,7 @@ const store = configureStore({
     dietRecipe: dietRecipeSlice.reducer,
     cuisineRecipe: cuisineRecipeSlice.reducer,
     searchWord: searchWordSlice.reducer,
+    searchRecipe: searchRecipeSlice.reducer,
   }
 });
 
