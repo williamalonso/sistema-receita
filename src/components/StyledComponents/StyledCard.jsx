@@ -6,9 +6,10 @@ const StyledCards = styled.div`
   /* width: 100%; */
   /* margin-left: auto;
   margin-right: auto; */
-  background-color: blue;
+  /* background-color: blue; */
   position: relative;
   overflow: hidden;
+  cursor: pointer;
   img {
     border-radius: 2rem;
     width: 100%;

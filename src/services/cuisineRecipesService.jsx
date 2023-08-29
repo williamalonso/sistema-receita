@@ -9,7 +9,6 @@ const cuisineRecipesService = async(dispatch, setCuisine, apiKey, cuisine) => {
   try {
     const response = await axios.get(`http://localhost:3001/cuisine/${cuisine}`);
     dispatch(setCuisine(response.data.dishes));
-    // console.log(response.data.dishes);
   } catch(e) {
     console.error('Erro ', e);
     return null;

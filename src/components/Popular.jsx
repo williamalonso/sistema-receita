@@ -9,6 +9,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import popularRecipesService from '../services/popularRecipesService';
 import '@splidejs/splide/css';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Popular = () => {
 
@@ -29,11 +30,13 @@ const Popular = () => {
             {
                 Object.keys(popularData).map( (key) => (
                     <SplideSlide key={key}>
-                        <StyledCard>
-                            <p>{popularData[key].title}</p>
-                            <img src={popularData[key].image} alt={popularData[key].title} />
-                            <StyledGradient />
-                        </StyledCard>
+                        <Link to={'/recipe/' + popularData[key].id}>
+                            <StyledCard>
+                                <p>{popularData[key].title}</p>
+                                <img src={popularData[key].image} alt={popularData[key].title} />
+                                <StyledGradient />
+                            </StyledCard>
+                        </Link>
                     </SplideSlide>
                 ))
             }

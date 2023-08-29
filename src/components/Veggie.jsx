@@ -9,6 +9,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/splide/css';
 import dietRecipesService from '../services/dietRecipesService';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Veggie = () => {
 
@@ -27,11 +28,13 @@ const Veggie = () => {
                 {
                     Object.keys(dietData).map( (key) => (
                         <SplideSlide key={key}>
-                            <StyledCard>
-                                <p>{dietData[key].title}</p>
-                                <img src={dietData[key].image} alt={dietData[key].title} />
-                                <StyledGradient />
-                            </StyledCard>
+                            <Link to={'/recipe/' + dietData[key].id}>
+                                <StyledCard>
+                                    <p>{dietData[key].title}</p>
+                                    <img src={dietData[key].image} alt={dietData[key].title} />
+                                    <StyledGradient />
+                                </StyledCard>
+                            </Link>
                         </SplideSlide>
                     ))
                 }
