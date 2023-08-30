@@ -9,6 +9,7 @@ const StyledGlobal = createGlobalStyle`
     padding: 0;
     margin: 0;
     /* background-color: red; */
+    font-family: 'Lobster Two', cursive;
   }
   h4 {
     font-size: 1rem;

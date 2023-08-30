@@ -10,6 +10,9 @@ import StyledCard from '../components/StyledComponents/StyledCard';
 import { Container } from 'react-bootstrap';
 import '@splidejs/splide/css';
 import { Link } from 'react-router-dom';
+import StyledLogo from '../components/StyledComponents/StyledLogo';
+import { GiKnifeFork } from 'react-icons/gi';
+import Search from '../components/Search';
 
 function Cuisine() {
 
@@ -27,6 +30,13 @@ function Cuisine() {
     
     return(
         <div>
+            <Container className="mt-5 d-flex justify-content-start align-items-center flex-wrap">
+                <StyledLogo to={'/'}>
+                <GiKnifeFork style={{fontSize:'2rem'}}></GiKnifeFork>
+                Início
+                </StyledLogo>
+            </Container>
+            <Search></Search>
             <Category></Category>
             <Container className="d-flex justify-content-start align-items-center flex-wrap">
                 {

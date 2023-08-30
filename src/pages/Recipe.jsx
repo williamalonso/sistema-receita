@@ -8,6 +8,9 @@ import { setBtnState } from "../store";
 import searchById from "../services/searchByIdService";
 import { setSearchByIdState } from "../store";
 import { useEffect } from "react";
+import StyledLogo from '../components/StyledComponents/StyledLogo';
+import { GiKnifeFork } from 'react-icons/gi';
+import Search from '../components/Search';
 
 function Recipe() {
 
@@ -23,6 +26,13 @@ function Recipe() {
 
   return(
     <Container className="mb-5">
+      <Container className="mt-5 d-flex justify-content-start align-items-center flex-wrap">
+        <StyledLogo to={'/'}>
+          <GiKnifeFork style={{fontSize:'2rem'}}></GiKnifeFork>
+          Início
+        </StyledLogo>
+      </Container>
+      <Search></Search>
       <Category></Category>
       {
         searchedById ? (
