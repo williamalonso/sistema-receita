@@ -90,6 +90,42 @@ const searchRecipeSlice = createSlice({
 
 export const { setSearchRecipe } = searchRecipeSlice.actions;
 
+/* ===== Active Btn State ===== */
+
+const initialBtnRecipe = {
+  initialBtnState: 'instrucoes',
+}
+
+const activeBtnRecipeSlice = createSlice({
+  name: 'activeBtnRecipe',
+  initialState: initialBtnRecipe,
+  reducers: {
+    setBtnState: (state, action) => {
+      state.initialBtnState = action.payload;
+    }
+  }
+});
+
+export const { setBtnState } = activeBtnRecipeSlice.actions;
+
+/* ===== Active Btn State ===== */
+
+const initialSearchByIdRecipe = {
+  searchById: '',
+}
+
+const searchByIdSlice = createSlice({
+  name: 'searchByIdRecipe',
+  initialState: initialSearchByIdRecipe,
+  reducers: {
+    setSearchByIdState: (state, action) => {
+      state.searchById = action.payload;
+    }
+  }
+});
+
+export const { setSearchByIdState } = searchByIdSlice.actions;
+
 /* ===== Store Config ===== */
 
 const store = configureStore({
@@ -99,6 +135,8 @@ const store = configureStore({
     cuisineRecipe: cuisineRecipeSlice.reducer,
     searchWord: searchWordSlice.reducer,
     searchRecipe: searchRecipeSlice.reducer,
+    activeBtnRecipe: activeBtnRecipeSlice.reducer,
+    searchByIdRecipe: searchByIdSlice.reducer,
   }
 });
 
