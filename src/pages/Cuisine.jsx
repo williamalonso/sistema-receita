@@ -9,6 +9,7 @@ import StyledGradient from '../components/StyledComponents/StyledGradient';
 import StyledCard from '../components/StyledComponents/StyledCard';
 import { Container } from 'react-bootstrap';
 import '@splidejs/splide/css';
+import { Link } from 'react-router-dom';
 
 function Cuisine() {
 
@@ -31,11 +32,13 @@ function Cuisine() {
                 {
                     cuisineData.length > 0 ? (
                         cuisineData.map( (item) => (
+                            <Link to={'/recipe/' + item.id}>
                                 <StyledCard key={item.id} className="mb-5 ms-5 me-5">
                                     <p>{item.title}</p>
                                     <img src={item.image} alt={item.title} />
                                     <StyledGradient />
                                 </StyledCard>
+                            </Link>
                         ))
                         ) : (
                             <div style={{marginLeft:'auto',marginRight:'auto'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>

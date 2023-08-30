@@ -7,6 +7,7 @@ import searchService from '../services/searchService';
 import Category from '../components/Category';
 import StyledCard from '../components/StyledComponents/StyledCard';
 import StyledGradient from '../components/StyledComponents/StyledGradient';
+import { Link } from 'react-router-dom';
 
 function Searched() {
 
@@ -26,11 +27,13 @@ function Searched() {
           {
             searchRecipe.length > 0 ? (
                 searchRecipe.map( (item) => (
-                        <StyledCard key={item.id} className="mb-5 ms-5 me-5">
-                            <p>{item.title}</p>
-                            <img src={item.image} alt={item.title} />
-                            <StyledGradient />
-                        </StyledCard>
+                  <Link to={'/recipe/' + item.id}>
+                    <StyledCard key={item.id} className="mb-5 ms-5 me-5">
+                        <p>{item.title}</p>
+                        <img src={item.image} alt={item.title} />
+                        <StyledGradient />
+                    </StyledCard>
+                  </Link>
                 ))
                 ) : (
                     <div style={{marginLeft:'auto',marginRight:'auto'}}><i className="fas fa-spinner fa-spin fa-3x"></i></div>
