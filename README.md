@@ -38,6 +38,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - É exibida uma lista dos principais pratos;
 - É possível pesquisar por uma receita;
 - É possível filtrar as receitas;
+- Os cards exibem efeito de fade-in e fade-out;
 
 ---
 
