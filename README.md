@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZfdcDoYbFDE4MrFowcOtfsOHIi6ISG_GvAd5q4ZaDxqkNoZTm9r6wtA4JobzVZdIcrlckuxid0WLw45Aoqf6pZ0S78bxJHu6r1JCBRRt_mM9VtU7-t7Y0exBf9DzHg1-DtnTcl-rr7c-p4XmeXZsShRFY8Xy2j5EmIaJxJeF3lk-29CwOSWo4wCIm/s607/pagina-em-construcao.png" alt"Imagem com a mensagem em construção" title="Imagem com a mensagem em construção" width="600" />
+  <img src="/home.png" alt"Imagem com a mensagem em construção" title="Imagem com a mensagem em construção" width="600" />
 </div>
 
 ---
@@ -29,6 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React Icons](https://react-icons.github.io/react-icons)
 - [React Splide](https://splidejs.com)
 - [React Bootstrap](https://react-bootstrap.github.io)
+- [Json Server](https://www.npmjs.com/package/json-server)
 
 ---
 
@@ -74,6 +75,7 @@ com a apiKey, crie o arquivo `.env` e dentro dele crie a variável:
 REACT_APP_API_KEY={cole_sua_chave}
 ```
 
-Por fim, dê o comando `npm start`.
+Após isso, dê o comando `npm start` na pasta principal do projeto.
+Por fim, entre na apsta `backend` e também rode o comando `npm start` para rodar alguns cards que estão armazenados no JSON Server.
 
 <h3 align="center">William Alonso</h3>
