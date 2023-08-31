@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="/home.png" alt"Imagem com a mensagem em construção" title="Imagem com a mensagem em construção" width="600" />
+  <img src="/public/home.png" alt"Imagem da página inicial do projeto" title="Imagem da página inicial do projeto" width="600" />
 </div>
 
 ---
@@ -76,6 +76,7 @@ REACT_APP_API_KEY={cole_sua_chave}
 ```
 
 Após isso, dê o comando `npm start` na pasta principal do projeto.
-Por fim, entre na apsta `backend` e também rode o comando `npm start` para rodar alguns cards que estão armazenados no JSON Server.
+
+Por fim, entre na pasta `backend` e também rode o comando `npm start` para rodar alguns cards que estão armazenados no JSON Server.
 
 <h3 align="center">William Alonso</h3>
